@@ -15,7 +15,7 @@ const ProductPage = () => {
   //     .then((response) => setProducts(response.data));
   // }, []);
 
-  return <ProductView products={isLoading ? [] : data.data} />;
+  return <ProductView products={isLoading ? [] : data?.data} />;
 };
 
 export default ProductPage;
